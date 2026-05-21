@@ -32,14 +32,18 @@
             mono: ['JetBrains Mono', 'SF Mono', 'monospace'],
           },
           colors: {
-            brand: {
-              50: '#f0f4ff',
-              100: '#dbe4ff',
-              200: '#bac8ff',
-              400: '#748ffc',
-              500: '#4c6ef5',
-              600: '#3b5bdb',
-              700: '#364fc7',
+            navy: {
+              950: '#0A1340',
+              900: '#0F1A4F',
+              800: '#1A2659',
+              700: '#2A3669',
+              600: '#3A4A7A',
+              500: '#4A6FA5',
+              400: '#6B8FBF',
+              300: '#8BAFD4',
+              200: '#B8C5D9',
+              100: '#D4DDEA',
+              50:  '#EDF1F7',
             }
           }
         }
@@ -59,23 +63,23 @@
     }
   </style>
 </head>
-<body class="bg-white text-gray-900 dark:bg-gray-950 dark:text-gray-100 font-sans transition-colors duration-300">
+<body class="bg-navy-50 text-navy-900 dark:bg-navy-900 dark:text-white font-sans transition-colors duration-300">
 
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-200/50 dark:border-gray-800/50">
+  <nav class="fixed top-0 w-full z-50 bg-navy-50/80 dark:bg-navy-900/80 backdrop-blur-md border-b border-navy-200/50 dark:border-navy-700/50">
     <div class="max-w-5xl mx-auto px-6 h-14 flex items-center justify-between">
       <a href="#" class="text-lg font-semibold tracking-tight" data-i18n="nav.brand">
-        <span class="text-gray-900 dark:text-white">XLOGIC</span><span class="text-gray-400 dark:text-gray-500 font-light ml-1">Limited</span>
+        <span class="text-navy-900 dark:text-white">XLOGIC</span><span class="text-navy-400 dark:text-navy-500 font-light ml-1">Limited</span>
       </a>
       <div class="flex items-center gap-6">
-        <div class="hidden sm:flex items-center gap-6 text-sm text-gray-600 dark:text-gray-400">
-          <a href="#technology" class="hover:text-gray-900 dark:hover:text-white transition-colors">Technology</a>
-          <a href="#development" class="hover:text-gray-900 dark:hover:text-white transition-colors">Development</a>
-          <a href="#workflow-gap" class="hover:text-gray-900 dark:hover:text-white transition-colors">Workflow Gap</a>
-          <a href="#licensing" class="hover:text-gray-900 dark:hover:text-white transition-colors">Licensing</a>
-          <a href="#contact" class="hover:text-gray-900 dark:hover:text-white transition-colors">Contact</a>
+        <div class="hidden sm:flex items-center gap-6 text-sm text-navy-600 dark:text-navy-200">
+          <a href="#technology" class="hover:text-navy-900 dark:hover:text-white transition-colors">Technology</a>
+          <a href="#development" class="hover:text-navy-900 dark:hover:text-white transition-colors">Development</a>
+          <a href="#workflow-gap" class="hover:text-navy-900 dark:hover:text-white transition-colors">Workflow Gap</a>
+          <a href="#licensing" class="hover:text-navy-900 dark:hover:text-white transition-colors">Licensing</a>
+          <a href="#contact" class="hover:text-navy-900 dark:hover:text-white transition-colors">Contact</a>
         </div>
-        <button id="theme-toggle" class="p-2 rounded-md text-gray-500 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle theme">
+        <button id="theme-toggle" class="p-2 rounded-md text-navy-500 hover:text-navy-900 dark:hover:text-white hover:bg-navy-100 dark:hover:bg-navy-800 transition-colors" aria-label="Toggle theme">
           <svg id="icon-sun" class="w-4 h-4 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"/>
           </svg>
@@ -90,15 +94,15 @@
   <!-- Hero -->
   <section class="min-h-screen flex items-center pt-14">
     <div class="max-w-5xl mx-auto px-6 py-24 md:py-32 fade-in">
-      <p class="text-xs font-mono tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-6" data-i18n="hero.label">Product Development &middot; Hong Kong</p>
+      <p class="text-xs font-mono tracking-widest uppercase text-navy-400 dark:text-navy-500 mb-6" data-i18n="hero.label">Product Development &middot; Hong Kong</p>
       <h1 class="text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight tracking-tight max-w-3xl" data-i18n="hero.title">
         One-step workflow.<br class="hidden sm:block"> Patented hardware architecture.
       </h1>
-      <p class="mt-6 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl leading-relaxed" data-i18n="hero.subtitle">
+      <p class="mt-6 text-base sm:text-lg text-navy-600 dark:text-navy-200 max-w-2xl leading-relaxed" data-i18n="hero.subtitle">
         Hong Kong-based product development company designing next-generation workstation systems. We unify multi-device workflows through patented hardware &mdash; engineered, prototyped, and licensed worldwide.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4">
-        <a href="mailto:director@xlogic.co" class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium bg-gray-900 text-white dark:bg-white dark:text-gray-900 rounded-md hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors" data-i18n="hero.cta">
+        <a href="mailto:director@xlogic.co" class="inline-flex items-center justify-center px-6 py-3 text-sm font-medium bg-navy-900 text-white dark:bg-white dark:text-navy-900 rounded-md hover:bg-navy-800 dark:hover:bg-navy-100 transition-colors" data-i18n="hero.cta">
           Contact us
           <svg class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
         </a>
@@ -107,44 +111,44 @@
   </section>
 
   <!-- Technology -->
-  <section id="technology" class="py-24 md:py-32 border-t border-gray-200 dark:border-gray-800">
+  <section id="technology" class="py-24 md:py-32 border-t border-navy-200 dark:border-navy-700">
     <div class="max-w-5xl mx-auto px-6">
-      <p class="text-xs font-mono tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-3">02</p>
+      <p class="text-xs font-mono tracking-widest uppercase text-navy-400 dark:text-navy-500 mb-3">02</p>
       <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-16" data-i18n="tech.title">Technology</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Card 1 -->
-        <div class="group p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+        <div class="group p-6 rounded-lg border border-navy-200 dark:border-navy-700 hover:border-navy-300 dark:hover:border-navy-600 transition-colors">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
             <span class="text-xs font-mono uppercase tracking-wider text-emerald-600 dark:text-emerald-400" data-i18n="tech.card1.status">Granted</span>
           </div>
           <h3 class="text-lg font-semibold mb-1" data-i18n="tech.card1.title">Granted Patent</h3>
-          <p class="font-mono text-sm text-gray-500 dark:text-gray-400 mb-3">KR 10-2952105</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="tech.card1.desc">
+          <p class="font-mono text-sm text-navy-500 dark:text-navy-400 mb-3">KR 10-2952105</p>
+          <p class="text-sm text-navy-600 dark:text-navy-200 leading-relaxed" data-i18n="tech.card1.desc">
             Core architecture for integrated workstation hardware. Registered in the Republic of Korea.
           </p>
         </div>
         <!-- Card 2 -->
-        <div class="group p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+        <div class="group p-6 rounded-lg border border-navy-200 dark:border-navy-700 hover:border-navy-300 dark:hover:border-navy-600 transition-colors">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-            <span class="text-xs font-mono uppercase tracking-wider text-blue-600 dark:text-blue-400" data-i18n="tech.card2.status">Filed</span>
+            <div class="w-2 h-2 rounded-full bg-sky-500"></div>
+            <span class="text-xs font-mono uppercase tracking-wider text-sky-600 dark:text-sky-400" data-i18n="tech.card2.status">Filed</span>
           </div>
           <h3 class="text-lg font-semibold mb-1" data-i18n="tech.card2.title">PCT Filed</h3>
-          <p class="font-mono text-sm text-gray-500 dark:text-gray-400 mb-3">PCT/KR2026/000583</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="tech.card2.desc">
+          <p class="font-mono text-sm text-navy-500 dark:text-navy-400 mb-3">PCT/KR2026/000583</p>
+          <p class="text-sm text-navy-600 dark:text-navy-200 leading-relaxed" data-i18n="tech.card2.desc">
             International filing extending coverage to key manufacturing jurisdictions worldwide.
           </p>
         </div>
         <!-- Card 3 -->
-        <div class="group p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+        <div class="group p-6 rounded-lg border border-navy-200 dark:border-navy-700 hover:border-navy-300 dark:hover:border-navy-600 transition-colors">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-2 h-2 rounded-full bg-amber-500"></div>
             <span class="text-xs font-mono uppercase tracking-wider text-amber-600 dark:text-amber-400" data-i18n="tech.card3.status">In Progress</span>
           </div>
           <h3 class="text-lg font-semibold mb-1" data-i18n="tech.card3.title">Additional Filings</h3>
-          <p class="font-mono text-sm text-gray-500 dark:text-gray-400 mb-3">Pending</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="tech.card3.desc">
+          <p class="font-mono text-sm text-navy-500 dark:text-navy-400 mb-3">Pending</p>
+          <p class="text-sm text-navy-600 dark:text-navy-200 leading-relaxed" data-i18n="tech.card3.desc">
             Reinforcement applications strengthening the core patent family.
           </p>
         </div>
@@ -153,44 +157,44 @@
   </section>
 
   <!-- Product Development -->
-  <section id="development" class="py-24 md:py-32 border-t border-gray-200 dark:border-gray-800">
+  <section id="development" class="py-24 md:py-32 border-t border-navy-200 dark:border-navy-700">
     <div class="max-w-5xl mx-auto px-6">
-      <p class="text-xs font-mono tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-3">03</p>
+      <p class="text-xs font-mono tracking-widest uppercase text-navy-400 dark:text-navy-500 mb-3">03</p>
       <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-16" data-i18n="dev.title">Product Development</h2>
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Card 1 -->
-        <div class="group p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+        <div class="group p-6 rounded-lg border border-navy-200 dark:border-navy-700 hover:border-navy-300 dark:hover:border-navy-600 transition-colors">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
             <span class="text-xs font-mono uppercase tracking-wider text-emerald-600 dark:text-emerald-400" data-i18n="dev.card1.status">Active</span>
           </div>
           <h3 class="text-lg font-semibold mb-1" data-i18n="dev.card1.title">CAD Engineering</h3>
-          <p class="font-mono text-sm text-gray-500 dark:text-gray-400 mb-3">Autodesk Fusion</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="dev.card1.desc">
+          <p class="font-mono text-sm text-navy-500 dark:text-navy-400 mb-3">Autodesk Fusion</p>
+          <p class="text-sm text-navy-600 dark:text-navy-200 leading-relaxed" data-i18n="dev.card1.desc">
             End-to-end 3D modeling of our hardware architecture. Iterative design validated through physical testing.
           </p>
         </div>
         <!-- Card 2 -->
-        <div class="group p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+        <div class="group p-6 rounded-lg border border-navy-200 dark:border-navy-700 hover:border-navy-300 dark:hover:border-navy-600 transition-colors">
           <div class="flex items-center gap-3 mb-4">
             <div class="w-2 h-2 rounded-full bg-emerald-500"></div>
             <span class="text-xs font-mono uppercase tracking-wider text-emerald-600 dark:text-emerald-400" data-i18n="dev.card2.status">Active</span>
           </div>
           <h3 class="text-lg font-semibold mb-1" data-i18n="dev.card2.title">Prototype Fabrication</h3>
-          <p class="font-mono text-sm text-gray-500 dark:text-gray-400 mb-3">FDM 3D Printing</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="dev.card2.desc">
+          <p class="font-mono text-sm text-navy-500 dark:text-navy-400 mb-3">FDM 3D Printing</p>
+          <p class="text-sm text-navy-600 dark:text-navy-200 leading-relaxed" data-i18n="dev.card2.desc">
             In-house rapid prototyping for structural validation and pre-tooling iteration. Bambu Lab production printer.
           </p>
         </div>
         <!-- Card 3 -->
-        <div class="group p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-gray-300 dark:hover:border-gray-700 transition-colors">
+        <div class="group p-6 rounded-lg border border-navy-200 dark:border-navy-700 hover:border-navy-300 dark:hover:border-navy-600 transition-colors">
           <div class="flex items-center gap-3 mb-4">
-            <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-            <span class="text-xs font-mono uppercase tracking-wider text-blue-600 dark:text-blue-400" data-i18n="dev.card3.status">Q4 2026</span>
+            <div class="w-2 h-2 rounded-full bg-sky-500"></div>
+            <span class="text-xs font-mono uppercase tracking-wider text-sky-600 dark:text-sky-400" data-i18n="dev.card3.status">Q4 2026</span>
           </div>
           <h3 class="text-lg font-semibold mb-1" data-i18n="dev.card3.title">Manufacturing Partnerships</h3>
-          <p class="font-mono text-sm text-gray-500 dark:text-gray-400 mb-3">Canton Fair 2026</p>
-          <p class="text-sm text-gray-600 dark:text-gray-400 leading-relaxed" data-i18n="dev.card3.desc">
+          <p class="font-mono text-sm text-navy-500 dark:text-navy-400 mb-3">Canton Fair 2026</p>
+          <p class="text-sm text-navy-600 dark:text-navy-200 leading-relaxed" data-i18n="dev.card3.desc">
             Engaging OEM partners in October 2026 for tooling-grade validation and licensed production rollout.
           </p>
         </div>
@@ -199,11 +203,11 @@
   </section>
 
   <!-- The Workflow Gap -->
-  <section id="workflow-gap" class="py-24 md:py-32 border-t border-gray-200 dark:border-gray-800">
+  <section id="workflow-gap" class="py-24 md:py-32 border-t border-navy-200 dark:border-navy-700">
     <div class="max-w-5xl mx-auto px-6">
-      <p class="text-xs font-mono tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-3">04</p>
+      <p class="text-xs font-mono tracking-widest uppercase text-navy-400 dark:text-navy-500 mb-3">04</p>
       <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-12" data-i18n="gap.title">The Workflow Gap</h2>
-      <div class="max-w-3xl space-y-6 text-gray-600 dark:text-gray-400 leading-relaxed">
+      <div class="max-w-3xl space-y-6 text-navy-600 dark:text-navy-200 leading-relaxed">
         <p data-i18n="gap.p1">
           Modern knowledge work spans multiple devices &mdash; displays, tablets, laptops, peripherals. Yet desk hardware has not evolved to integrate them into a single coherent workflow.
         </p>
@@ -213,7 +217,7 @@
         <p data-i18n="gap.p3">
           We see the workstation as a single system. Our patented hardware architecture is built around that principle &mdash; engineered to eliminate the friction between devices, not just hold them.
         </p>
-        <p class="text-gray-900 dark:text-white font-medium pt-4" data-i18n="gap.conclusion">
+        <p class="text-navy-900 dark:text-white font-medium pt-4" data-i18n="gap.conclusion">
           One desk. One workflow. One integrated system.
         </p>
       </div>
@@ -221,21 +225,21 @@
   </section>
 
   <!-- Manufacturing & Licensing Partnerships -->
-  <section id="licensing" class="py-24 md:py-32 border-t border-gray-200 dark:border-gray-800">
+  <section id="licensing" class="py-24 md:py-32 border-t border-navy-200 dark:border-navy-700">
     <div class="max-w-5xl mx-auto px-6">
-      <p class="text-xs font-mono tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-3">05</p>
+      <p class="text-xs font-mono tracking-widest uppercase text-navy-400 dark:text-navy-500 mb-3">05</p>
       <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-12" data-i18n="licensing.title">Manufacturing &amp; Licensing Partnerships</h2>
       <div class="max-w-3xl">
-        <p class="text-gray-600 dark:text-gray-400 leading-relaxed mb-8" data-i18n="licensing.body">
+        <p class="text-navy-600 dark:text-navy-200 leading-relaxed mb-8" data-i18n="licensing.body">
           We work with workspace hardware manufacturers, peripheral brands, and workstation OEMs to bring our patented architecture into production. Worldwide territory available, excluding Republic of Korea (reserved for direct development).
         </p>
         <div class="flex flex-col sm:flex-row gap-6 items-start sm:items-center">
-          <a href="mailto:director@xlogic.co" class="inline-flex items-center text-sm font-medium text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+          <a href="mailto:director@xlogic.co" class="inline-flex items-center text-sm font-medium text-navy-900 dark:text-white hover:text-navy-600 dark:hover:text-navy-300 transition-colors">
             Request term sheet
             <svg class="ml-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25"/></svg>
           </a>
         </div>
-        <p class="mt-8 text-xs text-gray-400 dark:text-gray-600" data-i18n="licensing.note">
+        <p class="mt-8 text-xs text-navy-400 dark:text-navy-600" data-i18n="licensing.note">
           Technical specifications and term sheets available upon NDA.
         </p>
       </div>
@@ -243,36 +247,36 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-24 md:py-32 border-t border-gray-200 dark:border-gray-800">
+  <section id="contact" class="py-24 md:py-32 border-t border-navy-200 dark:border-navy-700">
     <div class="max-w-5xl mx-auto px-6">
-      <p class="text-xs font-mono tracking-widest uppercase text-gray-400 dark:text-gray-500 mb-3">06</p>
+      <p class="text-xs font-mono tracking-widest uppercase text-navy-400 dark:text-navy-500 mb-3">06</p>
       <h2 class="text-2xl sm:text-3xl font-semibold tracking-tight mb-12" data-i18n="contact.title">Get in touch</h2>
       <div class="grid sm:grid-cols-3 gap-8">
         <div>
-          <p class="text-xs font-mono uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2" data-i18n="contact.email.label">Email</p>
-          <a href="mailto:director@xlogic.co" class="text-gray-900 dark:text-white hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+          <p class="text-xs font-mono uppercase tracking-wider text-navy-400 dark:text-navy-500 mb-2" data-i18n="contact.email.label">Email</p>
+          <a href="mailto:director@xlogic.co" class="text-navy-900 dark:text-white hover:text-navy-600 dark:hover:text-navy-300 transition-colors">
             director@xlogic.co
           </a>
         </div>
         <div>
-          <p class="text-xs font-mono uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2" data-i18n="contact.company.label">Company</p>
-          <p class="text-gray-900 dark:text-white">XLOGIC Limited</p>
+          <p class="text-xs font-mono uppercase tracking-wider text-navy-400 dark:text-navy-500 mb-2" data-i18n="contact.company.label">Company</p>
+          <p class="text-navy-900 dark:text-white">XLOGIC Limited</p>
         </div>
         <div>
-          <p class="text-xs font-mono uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2" data-i18n="contact.location.label">Location</p>
-          <p class="text-gray-900 dark:text-white">Hong Kong</p>
+          <p class="text-xs font-mono uppercase tracking-wider text-navy-400 dark:text-navy-500 mb-2" data-i18n="contact.location.label">Location</p>
+          <p class="text-navy-900 dark:text-white">Hong Kong</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="py-8 border-t border-gray-200 dark:border-gray-800">
+  <footer class="py-8 border-t border-navy-200 dark:border-navy-700">
     <div class="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">
-      <p class="text-xs text-gray-400 dark:text-gray-600">
+      <p class="text-xs text-navy-400 dark:text-navy-600">
         &copy; 2026 XLOGIC Limited. All rights reserved.
       </p>
-      <p class="text-xs font-mono text-gray-400 dark:text-gray-600">
+      <p class="text-xs font-mono text-navy-400 dark:text-navy-600">
         KR 10-2952105 &ensp;|&ensp; PCT/KR2026/000583
       </p>
     </div>
